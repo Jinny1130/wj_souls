@@ -1,0 +1,384 @@
+/* 폰트 */
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ELAND_Choice_L';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_L.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* default */
+a:hover{text-decoration: none;}
+.brM{display:none;}
+
+
+
+/* header */
+#header{
+    width:100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.headerWrap{
+    max-width: 1530px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.souls_logo{
+    width: 20%;
+    height: 100%;
+    margin-bottom: 0;
+}
+.souls_logo a{
+    height: 100%;
+    display: block;
+    padding: 10px 0;
+}
+
+.headerWrap .nav{
+    margin-bottom:0;
+    font-size: 22px;
+    width: 80%;
+    display: flex;
+}
+.headerWrap .nav li{
+    width:13%;
+}
+.headerWrap .nav li a{
+    display: block;
+    margin-right: 20px;
+    color: #222;
+}
+
+
+/* toggleBtn */
+#toggleBtn{
+    display:none;
+}
+.toggleBtn{
+    display:none;
+    width:40px;
+    height:40px;
+    margin-bottom:0;
+    position:relative;
+    cursor: pointer;
+}
+.toggleBtn span{
+    width:100%;
+    height: 2px;
+    background-color:#222;
+    position:absolute;
+    transition: all 0.5s
+}
+.toggleBtn span:nth-child(1){top:0;}
+.toggleBtn span:nth-child(2){top:50%; transform:translateY(-50%);}
+.toggleBtn span:nth-child(3){bottom:0;}
+
+
+
+
+
+/* visual */
+.visual{
+    width:100%;
+    height: 100vh;
+    background:url(/wj_souls/img/visual_bg2.png) center no-repeat;
+    background-size:cover;
+}
+.visual_txt{
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.visual_txt h2{
+    font-size:55px;
+    font-family: 'ELAND_Choice_M';
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+.visual_txt h4{
+    font-size:25px;
+    font-family: 'ELAND_Choice_L';
+    line-height: 1.5;
+}
+
+
+/* our business */
+#business{margin:12% 0;}
+.business{
+    max-width: 1530px;
+    margin: 0 auto;
+}
+.businessWrap{margin:10% 0;}
+.businessWrap h3{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom:3%;
+    font-family: 'GmarketSansMedium';
+}
+
+.businessList{
+    display: flex;
+    flex-wrap: wrap;
+    margin:5% 0;
+}
+.businessList li{
+    width:calc(100%/3);
+    margin-top:3%;
+    cursor: pointer;
+}
+.businessList li a{
+    display: block;
+    margin:10%;
+    text-align:center;
+    color:#222;
+}
+.businessList li a img{
+    transform: scale(1);
+    transition: all 0.5s
+}
+.businessList li a h4{
+    font-family: 'GmarketSansMedium';
+    margin:6% 0;
+}
+.businessList li a p{
+    font-family: 'GmarketSansLight';
+}
+
+.businessList li a:hover img{
+    transform:scale(1.1);
+}
+.businessList li a:hover{
+    color:rgb(0, 116, 205);
+}
+
+
+
+/* footer */
+.margin_L{margin-left:15px;}
+#footer{
+    width: 100%;
+    background-color: #485876;
+    padding:2% 0;
+}
+.footerWrap{
+    max-width: 1530px;
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ft_left{
+    width:65%;
+}
+.ft_left .ft_info{
+    margin-top: 3%;
+    color: rgb(255 255 255 / 70%);
+    font-weight: 300;
+    font-size:15px;
+}
+.ft_info span{font-weight: bold;}
+.ft_info p:first-child{margin-bottom: 3px;}
+
+.ft_right{
+    width: 20%;
+    color: #fff;
+    border-left: 2px solid rgb(255 255 255 / 50%);
+    padding-left: 5%;
+}
+.ft_right .soulsNum p{font-size:18px;}
+.ft_right .soulsNum h4{font-size:30px; color:#33e1ff;}
+
+.famSiteBox{
+    width: 100%;
+    height: 47px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    margin-bottom: 30%;
+    position:relative;
+}
+.famSiteBox>a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    line-height: 47px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.famSiteBox:hover .xi-angle-up::before{content:'\e941';}
+
+.famSiteList{
+    position:absolute;
+    bottom:45px;
+    margin-bottom:0;
+    width:100%;
+    background-color: #485876;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: all 0.3s;
+}
+.famSiteBox:hover .famSiteList{
+    opacity: 1;
+    height: 200px;
+}
+
+.famSiteList li{
+    width:100%;
+    height: 45px;
+}
+.famSiteList li:hover{background-color:#f1f1f1;}
+.famSiteList li:hover a{color:#485876;}
+.famSiteList li a{
+    display: block;
+    padding: 5%;
+    color: #fff;
+}
+
+
+
+
+
+/* 타블렛 */
+@media screen and (max-width:1024px) {
+
+    .br{display:none;}
+    .brM{display:block;}
+    p{word-break: keep-all;}
+    .margin_L{margin:0;}
+
+    /* header */
+    #header{
+        position:relative;
+    }
+    .headerWrap .nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        width: 100%;
+        text-align: center;
+    }
+    .headerWrap .nav li{
+        width:100%;
+    }
+    .headerWrap .nav li a{
+        padding: 15px 0;
+        margin-right:0;
+        background-color: #eff7ff;
+    }
+    .headerWrap .nav li.on a{
+        background-color: #387fc8;
+        color: #fff;
+    }
+    .toggleBtn{
+        display:block;
+        position:absolute;
+        right:3%;
+    }
+
+    input[id=toggleBtn]:checked + label span:nth-child(1){
+        top:50%;
+        transform:translateY(-50%) rotate(45deg);
+    }
+    input[id=toggleBtn]:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+    input[id=toggleBtn]:checked + label span:nth-child(3){
+        bottom:50%;
+        transform:translateY(50%) rotate(-45deg);
+    }
+
+
+
+    /* visual */
+    .visual_txt{width:90%;}
+
+
+
+    /* out business */
+    .business{width:90%;}
+    .businessList li{width:50%;}
+
+
+
+    /* footer */
+    .footerWrap{width:90%;}
+    .ft_left .ft_info{font-size:14px;}
+    .ft_right{width:35%;}
+
+
+
+}
+
+
+
+
+/* 모바일 */
+@media screen and (max-width:516px) {
+
+    /* visual */
+    .visual{height: 750px;}
+    .visual_txt h2{font-size:40px;}
+    .visual_txt h4{font-size:20px;}
+
+
+    /* our business */
+    .businessWrap {margin: 20% 0;}
+
+    .businessList{
+        display: block;
+        margin: 15% 0;
+    }
+    .businessList li{
+        width:100%;
+        margin: 25% 0;
+    }
+
+
+    /* footer */
+    .footerWrap{display:block; margin:10% auto;}
+    .ft_left, .ft_right{width:100%;}
+    .ft_info{margin:10% 0;}
+    .ft_right{
+        height: inherit;
+        border: none;
+        padding: 0;
+    }
+
+    .famSiteBox>a.click{opacity:0; height: 0;}
+
+}
